@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Menu</title>
+
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/menu.css">
+
+  <script defer src="scripts/checkout.js"></script>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+        <div class="logo-and-heading-div">
+            <div class="logo">
+                <!-- <img src="" class="logo-image" alt="Logo"> -->
+            </div>
+            <h1>Timo-tea</h1>
+        </div>
+        <div class="navbar">
+            <div class="cart" onclick="openCartModal()">
+              &#128722;
+              <div id="cart-icon">0</div>
+            </div>
+            <label class="hamburger-menu">
+                <input type="checkbox">
+            </label>
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="nav-anchor-tag">Home</a></li>
+                        <li><a href="about.html" class="nav-anchor-tag">About</a></li>
+                        <li><a href="contact.html" class="nav-anchor-tag">Contact</a></li>
+                        <li><a href="#" class="nav-anchor-tag">Menu</a></li>
+                    </ul> 
+                </nav>
+            </aside>
+        </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-carousel-container">
+      <div id="prev" onclick="prevSlide()">&#10094;</div>
+      <div id="carousel-container">  
+        <div id="carousel">
+          <div class="slide">
+              <div class="product">
+                <span class="inner-product-container">
+                  <img src="images/cheesy-mango-creamcheese.jpg" alt="img">
+                  <p class="product-name">Cheesy Mango Creamcheese</p>
+                  <span class="price-span">
+                    <!-- <p>Size:</p> -->
+                    <select name="size" class="size">
+                      <option value="85">Medium</option>
+                      <option value="100">Large</option>
+                      <option value="110">XL</option>
+                    </select>
+                    <p class="price"></p>
+                  </span>
+                  <span>
+                    <input type="number" class="quantity-input" min="1" value="1" id="quantity1">
+                    <button class="add-to-cart">Add to Cart</button>
+                  </span>
+                </span>
+              </div>
+              <div class="product">
+                <span class="inner-product-container">
+                  <img src="images/classic-milktea-darkchoco.jpg" alt="img">
+                  <p class="product-name">Classic Milktea Darkchocho</p>
+                   <span class="price-span">
+                    <!-- <p>Size:</p> -->
+                    <select name="size" class="size">
+                      <option value="85">Medium</option>
+                      <option value="100">Large</option>
+                      <option value="110">XL</option>
+                    </select>
+                    <p class="price"></p>
+                  </span>
+                  <span>
+                    <input type="number" class="quantity-input" min="1" value="1" id="quantity2">
+                    <button class="add-to-cart">Add to Cart</button>
+                  </span>
+                </span>
+              </div>
+          </div>
+          <div class="slide">
+              <div class="product">
+                <span class="inner-product-container">
+                  <img src="images/cookies-and-cream.jpg" alt="img">
+                  <p class="product-name">Cookies and Cream</p>
+                   <span class="price-span">
+                    <!-- <p>Size:</p> -->
+                    <select name="size" class="size">
+                      <option value="85">Medium</option>
+                      <option value="100">Large</option>
+                      <option value="110">XL</option>
+                    </select>
+                    <p class="price"></p>
+                  </span>
+                  <span>
+                    <input type="number" class="quantity-input" min="1" value="1" id="quantity4">
+                    <button class="add-to-cart">Add to Cart</button>
+                  </span>
+                </span>
+              </div>
+              <div class="product">
+                <span class="inner-product-container">
+                  <img src="images/frappe-strawberry.jpg" alt="img">
+                  <p class="product-name">Frappe Strawberry</p>
+                  <span class="price-span">
+                    <!-- <p>Size:</p> -->
+                    <select name="size" class="size">
+                      <option value="85">Medium</option>
+                      <option value="100">Large</option>
+                      <option value="110">XL</option>
+                    </select>
+                    <p class="price"></p>
+                  </span>
+                  <span>
+                    <input type="number" class="quantity-input" min="1" value="1" id="quantity5">
+                    <button class="add-to-cart">Add to Cart</button>
+                  </span>
+                </span>
+              </div>
+          </div>
+          <div class="slide">
+              <div class="product">
+                <span class="inner-product-container">
+                  <img src="images/fruit-tea-blueberry.jpg" alt="img">
+                  <p class="product-name">Fruit Tea Blueberry</p>
+                   <span class="price-span">
+                    <!-- <p>Size:</p> -->
+                    <select name="size" class="size">
+                      <option value="85">Medium</option>
+                      <option value="100">Large</option>
+                      <option value="110">XL</option>
+                    </select>
+                    <p class="price"></p>
+                  </span>
+                  <span>
+                    <input type="number" class="quantity-input" min="1" value="1" id="quantity1">
+                    <button class="add-to-cart">Add to Cart</button>
+                  </span>
+                </span>
+              </div>
+              <div class="product">
+                <span class="inner-product-container">
+                  <img src="images/hot-drip-coffee-caramel.jpg" alt="img">
+                  <p class="product-name">Hot Drip Coffee Caramel</p>
+                  <span class="price-span">
+                    <!-- <p>Size:</p> -->
+                    <select name="size" class="size">
+                      <option value="85">Medium</option>
+                      <option value="100">Large</option>
+                      <option value="110">XL</option>
+                    </select>
+                    <p class="price"></p>
+                  </span>
+                  <span>
+                    <input type="number" class="quantity-input" min="1" value="1" id="quantity2">
+                    <button class="add-to-cart">Add to Cart</button>
+                  </span>
+                </span>
+              </div>
+        </div>
+        <div class="slide">
+            <div class="product">
+              <span class="inner-product-container">
+                <img src="images/iced-coffee-caramel.jpg" alt="img">
+                <p class="product-name">Iced Coffee Caramel</p>
+                <span class="price-span">
+                    <!-- <p>Size:</p> -->
+                    <select name="size" class="size">
+                      <option value="85">Medium</option>
+                      <option value="100">Large</option>
+                      <option value="110">XL</option>
+                    </select>
+                    <p class="price"></p>
+                  </span>
+                <span>
+                  <input type="number" class="quantity-input" min="1" value="1" id="quantity1">
+                  <button class="add-to-cart">Add to Cart</button>
+                </span>
+              </span>
+            </div>
+            <div class="product">
+              <span class="inner-product-container">
+                <img src="images/matcha-cheese-cake.jpg" alt="img">
+                <p class="product-name">Matcha Cheese Cake</p>
+                <span class="price-span">
+                    <!-- <p>Size:</p> -->
+                    <select name="size" class="size">
+                      <option value="85">Medium</option>
+                      <option value="100">Large</option>
+                      <option value="110">XL</option>
+                    </select>
+                    <p class="price"></p>
+                  </span>
+                <span>
+                  <input type="number" class="quantity-input" min="1" value="1" id="quantity2">
+                  <button class="add-to-cart">Add to Cart</button>
+                </span>
+              </span>
+            </div>
+      </div>
+      <div class="slide">
+          <div class="product">
+            <span class="inner-product-container">
+              <img src="images/soda-pop-cucumber.jpg" alt="img">
+              <p class="product-name">Soda Pop Cucumber</p>
+              <span class="price-span">
+                    <!-- <p>Size:</p> -->
+                    <select name="size" class="size">
+                      <option value="85">Medium</option>
+                      <option value="100">Large</option>
+                      <option value="110">XL</option>
+                    </select>
+                    <p class="price"></p>
+                  </span>
+              <span>
+                <input type="number" class="quantity-input" min="1" value="1" id="quantity1">
+                <button class="add-to-cart">Add to Cart</button>
+              </span>
+            </span>
+          </div>
+          <div class="product">
+            <span class="inner-product-container">
+              <img src="images/yogurt-series-strawberry.jpg" alt="img">
+              <p class="product-name">Yogurt Series Strawberry</p>
+              <span class="price-span">
+                    <!-- <p>Size:</p> -->
+                    <select name="size" class="size">
+                      <option value="85">Medium</option>
+                      <option value="100">Large</option>
+                      <option value="110">XL</option>
+                    </select>
+                    <p class="price"></p>
+                  </span>
+              <span>
+                <input type="number" class="quantity-input" min="1" value="1" id="quantity2">
+                <button class="add-to-cart">Add to Cart</button>
+              </span>
+            </span>
+          </div>
+    </div>
+        </div>
+      </div>
+      <div id="next" onclick="nextSlide()">&#10095;</div>
+    </div>
+    
+    <div id="cart-modal">
+      <div id="cart-content">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items"></div>
+        <button onclick="closeCartModal()" class="closebtn">Close</button>
+      </div>
+    </div>
+  </main>
+
+
+</body>
+</html>

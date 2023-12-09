@@ -1,0 +1,234 @@
+main{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    position: relative; 
+    padding: 0 .5rem;
+}
+
+.main-carousel-container{
+    margin: 2rem;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: max-content; 
+    /* border: 5px solid red;    */
+}
+
+#carousel-container {
+    width: 100%;
+    /* height: 80%; */
+    margin: auto;
+    overflow: hidden;
+    /* border: 1px solid black; */
+    padding: 1rem 0;
+    position: relative;
+}
+
+#carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* height: 100%; */
+    height: max-content;
+    /* border: 1px solid blue; */
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 0 1rem;
+    padding: 2rem;
+    border: 2px solid var(--header-color);
+    border-radius: .5rem;
+    box-shadow: 1px 1px  5px var(--header-color);
+    box-sizing: border-box;
+}
+
+.product > span , .price-span{
+    display: flex;
+    /* align-self: center; */
+    flex-direction: column;
+    gap: .2rem
+}
+
+.price-span > * {
+    width: max-content;
+}
+
+.inner-product-container > img{
+    width: 10rem;
+}
+
+.inner-product-container > span > button{
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    border: none;
+    box-shadow: 1px 1px 5px var(--header-color);
+    font-weight: 500;
+}
+
+#prev, #next {
+    z-index: 10;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -1.2rem;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+#prev {
+    left: -.5rem;
+}
+
+#next {
+    right: -.5rem;
+    border-radius: 3px 0 0 3px;
+}
+
+#cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+#cart-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#cart-content > h2{
+    margin-bottom: .5rem;
+}
+
+
+.cart-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .3rem;
+}
+
+.remove-btn, .quantity-input {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.quantity-input {
+    width: 3rem;
+    margin-right: 5px;
+}
+
+.closebtn{
+    margin-top: .5rem;
+    padding: .2rem .5rem;
+    border-radius: .2rem;
+    border: none;
+    box-shadow: 1px 1px 5px var(--header-color);
+}
+
+@media only screen and (min-width: 768px){
+    /* main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    } */
+    .main-carousel-container{
+        display: flex;
+        position: relative;
+        width: 90%;
+        padding: 0 2rem;
+        height: max-content; 
+        margin: 7.5rem 0;
+    }
+   
+    .slide{
+        flex-direction: row;
+        gap: 0;
+        /* min-width: 100%; */
+        /* border: 10px solid red; */
+        /* border: 1px solid red; */
+    }
+
+    .product {
+        margin: 0 1rem;
+    }
+
+
+    .inner-product-container > img{
+        width: 12.5rem;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .main-carousel-container{
+        margin: 2rem;
+        display: flex;
+        position: relative;
+        width: 70%;
+        height: max-content; 
+        /* border: 5px solid red;    */
+    }
+   
+    .product{
+        padding: 2rem;
+        border: none;
+        box-shadow: none;
+    }
+
+    .product > span{
+    border: 2px solid var(--header-color);
+    border-radius: .5rem;
+    box-shadow: 1px 1px  5px var(--header-color);
+    box-sizing: border-box;
+    padding: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1240px){
+    .main-carousel-container{
+        margin: 2rem;
+        display: flex;
+        position: relative;
+        width: 60%;
+        height: max-content; 
+        /* border: 5px solid red;    */
+    }
+}    
