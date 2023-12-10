@@ -212,7 +212,7 @@ nav ul li a{
 .sidebar {
 
     transition: var(--animation);
-    translate: 0 -10rem;
+    translate: 0 -50rem;
     padding: 0 2rem;
     /* padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem); */
     min-width: 8rem;
